@@ -1,0 +1,295 @@
+
+<html>
+<head>
+<title>Card Gallery</title>
+    <link rel="shortcut icon" href="title.png" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		body
+			{
+            margin:0;
+            padding:0;
+			}	
+		.a
+			{
+				background-color:#000;
+                width: 100%;
+			
+				height: 70px;
+				margin: 0px;
+				padding: 0;
+                position:fixed;
+                overflow:hidden;
+			}
+		.a1
+			{
+				background-image: url(q.jpg);
+				background-position:center;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width:100%;
+				height:auto;
+				padding: 0;
+			}
+		.b
+			{
+				display:inline-block;
+				float: left;
+				background-color: #000;
+				font-family: Snell Roundhand;
+				font-size:19px;
+				border-radius: 5px;
+				border:solid;
+  
+			}
+        .logo
+			{
+				width:65px;
+				height:65px;
+			}
+		a
+			{
+				text-decoration: none;
+				margin-right: 2px;
+				margin-left: 2px;
+				color:black;
+			}
+		.div1
+		{
+            color:white;
+			margin: 20px;
+            text-align:right;
+		}
+		.fa-facebook 
+		{
+  			background: #3B5998;
+  			color: white;
+  			width:20px;height:20px;
+		}
+		.fa-instagram 
+		{
+  			background: #dd4b39;
+  			color: white;
+  			width:20px;height:20px;
+		}
+		.img
+		{
+			text-align:center;
+          
+		}
+		.text 
+		{
+ 			color: #f2f2f2;
+  			font-size: 15px;
+  			padding: 8px 12px;
+  			position: absolute;
+  			bottom: 8px;
+  			width: 100%;
+  			text-align: center;
+		}	
+		
+        .w3-content w3-section
+        {
+            margin-top:100px;
+			
+        }
+		.td2
+		{
+			width:200px;
+			text-align: center;
+		}
+		        .mySlides {display:none;}
+                img{
+                    max-height:750px;
+        
+                }
+                body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text],input[type=email], select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+textarea{  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.cont {
+  border-radius: 5px;
+  margin-left:200px;
+  margin-right:200px;
+}
+	</style>
+</head>
+<body style="background-color: white;">
+    <div style="background-color:#000; height:70px;" class="a">
+        <div class="b"><a href="cardshome.html"><img src="logo.png" class="logo"></a></div>
+        <div style="position: absolute;top: 10;right: 10;"><a href="https://www.fb.com"><center><i class="fa fa-facebook"></i></center></a></div>
+        <div style="position: absolute;top: 10;right: 35;">
+            <a href="https://www.instagram.com/">
+                <center><i class="fa fa-instagram"></i></center>
+            </a>
+        </div>
+        <br>
+        <div class="div1" style="margin-left:200;">
+            <a href="cardshome.html" style="font-size:22; color:aliceblue;"><i class="fa fa-fw fa-home"></i>Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="trending.html" style="font-size:22;color:aliceblue;"><i class="fa fa-files"></i>Trending</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="gift.html" style="font-size:22;color:aliceblue;"><i class="fa fa-bars"></i>Gift Cards</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="untitled.html" style="font-size:22;color:aliceblue;"><i class="fa fa-fw fa-user"></i>LogIn</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="cardsnsignup.html" style="font-size:22;color:aliceblue;"><i class="fa fa-cloud"></i>SignUp</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="aboutus.html" style="font-size:22;color:aliceblue;"><i class="fa fa-fw fa-envelope"></i>About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+		</div>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </div>
+    <div class="w3-content w3-section" style="min-height:100%">
+        <img class="mySlides" src="5.jpg" style="width:100%">
+        <img class="mySlides" src="wq.jpg" style="width:100%">
+        <img class="mySlides" src="wq2.jpg" style="width:100%">
+    </div>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+    <div class="a1" style="width:100%">
+		<div style="font-size: 30px;" align="center">
+		<br>
+		
+			<a href="anniversery.html"><abbr title="link for Anniversary cards">Anniversary Ecards</abbr></a><br>
+				<a href="a1.html"><img src="a1.jpg" height="250px" width="250px"></a>
+                <a href="a2.html"><img src="a2.jpg" height="250px" width="250px"></a>
+                <a href="a3.html"><img src="a3.jpg" height="250px" width="250px"></a>
+                <a href="a4.html"><img src="a4.jpg" height="250px" width="250px"></a>
+				<div class="a1" style="width:auto;">
+		<div style="font-size: 30px;" align="center">
+		<br>
+			<a href="birthday.html"><abbr title="link for Birthday cards">Birthday Ecards</abbr></a><br>
+				<a href="br1.html"><img src="br1.jpg" height="250px" width="250px"></a>
+                <a href="br2.html"><img src="br2.jpg" height="250px" width="250px"></a>
+                <a href="br3.html"><img src="br3.jpg" height="250px" width="250px"></a>
+                <a href="br4.html"><img src="br4.jpg" height="250px" width="250px"></a>
+<div style="font-size: 30px;" align="center">	
+<br>		
+			<a href="frienship.html"><abbr title="link for Friendship cards">Friendship Ecards</abbr></a><br>
+				<a href="fr1.html"><img src="fr1.jpg" height="250px" width="250px"></a>
+                <a href="fr2.html"><img src="fr2.jpg" height="250px" width="250px"></a>
+                <a href="fr3.html"><img src="fr3.jpg" height="250px" width="250px"></a>
+                <a href="fr4.html"><img src="fr4.jpg" height="250px" width="250px"></a>
+				<br>
+				<div style="font-size: 30px;" align="center">
+				<BR>
+				<a href="congratulation.html"><abbr title="link for Congratulation cards">Congratulation Ecard</abbr></a><br>
+				<a href="cong1.html"><img src="cong1.jpg" height="250px" width="250px"></a>
+                <a href="cong2.html"><img src="cong2.jpg" height="250px" width="250px"></a>
+                <a href="cong3.html"><img src="cong3.jpg" height="250px" width="250px"></a>
+                <a href="cong4.html"><img src="cong4.jpg" height="250px" width="250px"></a>
+				<div style="font-size: 30px;" align="center">
+				<br>
+				<a href="getwell.html"><abbr title="link for Getwell">GetWell Ecards</abbr></a><br>
+				<a href="get1.html"><img src="get1.jpg" height="250px" width="250px"></a>
+                <a href="get2.html"><img src="get2.jpg" height="250px" width="250px"></a>
+                <a href="get3.html"><img src="get3.jpg" height="250px" width="250px"></a>
+                <a href="get4.html"><img src="get4.jpg" height="250px" width="250px"></a>
+				<div style="font-size: 30px;" align="center">
+				<br>
+				<a href="holiday.html"><abbr title="link for Holiday cards">Holiday Ecards</abbr></a><br>
+				<a href="holiday1.html"><img src="holiday1.jpg" height="250px" width="250px"></a>
+                <a href="holiday2.html"><img src="holiday2.jpg" height="250px" width="250px"></a>
+                <a href="holiday3.html"><img src="holiday3.jpg" height="250px" width="250px"></a>
+                <a href="holiday4.html"><img src="holiday4.jpg" height="250px" width="250px"></a>
+        
+        </div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+    <h1 align="center">CONTACT US</h1>
+    <hr align="center" width="10%">
+    <h3 align="center">Any question? You can contact us At help@cardgallery</h3>
+
+<script>
+function text(){
+alert("Message Has been sent");
+}
+</script>        <div class="cont">
+            <form>
+                <input type="text" name="firstname" placeholder="Your name..">
+
+
+                <input type="email" name="email" placeholder="abc@gmail.com">
+
+
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="SEND MESSAGE" onclick="text">
+            </form>
+        </div></h4>
+	<div style="background-color: #333333; height:220px; width:auto">
+		<img src="logo.png" align="right" height="100%"><br><br>
+		<table align="center" width="50%">
+		<tr>
+		<td><b><font color="white" size="+1"><i>About Us</i></font></b><br><br></td>
+		</tr>
+		<tr>
+		<td>
+		<font color="white">Contact: 2345656757<br>Rahul Goyal (Co-founder)<br>Rahul Thakur (Co-founder)<br>info@cardsgallery.com</font>
+		</td>
+		</tr>
+		</table>
+	</div>
+	<div style="background-color: black; height:100px; width:auto">
+	<footer style="text-align: center;color: white"><br>
+		<font face="Times New Roman">Welcome to GiftCardMall.com , where we help you create gifts as unique as your loved ones. From custom Visa Gift Cards to store gift cards and e-gift cards, we are your one stop shop for<br>
+		celebrating individuals. Want to know more about our company and how we’re active in our community? Connect with us on social media, read our blog and past press releases. If you are<br>
+		looking for cards for your business, visit our corporate site OmniCard.com where you can find incentive cards and professional greeting cards.</font>
+	</footer>
+	</div>
+</body>
+</html>
